@@ -11,8 +11,6 @@ diesel = { version = "2.0.0", features = ["sqlite", "r2d2"] }
 diesel_migrations = "2.0.0"
 rocket_cors = {path = "../rocket_cors"}
 
-
-
 [dependencies.rocket_sync_db_pools]
 version = "0.1.0-rc.2"
 features = ["diesel_sqlite_pool", "sqlite_pool"]

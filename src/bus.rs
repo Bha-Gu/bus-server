@@ -79,7 +79,6 @@ async fn bus_post<'r, 'o: 'r>(
             }
         })
         .await?;
-    //Ok(Json(a))
     let options = match core_options().to_cors() {
         Ok(a) => a,
         Err(a) => return Ok(Err(a)),
