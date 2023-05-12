@@ -1,3 +1,33 @@
+[development]
+address = "localhost"
+port = 8000
+workers = 4
+keep_alive = 5
+read_timeout = 5
+write_timeout = 5
+log = "normal"
+limits = { forms = 32768 }
+
+[staging]
+address = "0.0.0.0"
+port = 8000
+workers = 16
+keep_alive = 5
+read_timeout = 5
+write_timeout = 5
+log = "normal"
+limits = { forms = 32768 }
+
+[production]
+address = "0.0.0.0"
+port = 8000
+workers = 16
+keep_alive = 5
+read_timeout = 5
+write_timeout = 5
+log = "critical"
+limits = { forms = 32768 }
+
 [default.databases.diesel]
 url = "db/diesel/db.sqlite"
 timeout = 10
